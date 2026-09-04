@@ -88,7 +88,7 @@ const StaffDashboard = () => {
 
       alert(
         error.response?.data?.message ||
-          "Failed to update complaint status"
+        "Failed to update complaint status"
       );
     } finally {
       setUpdatingId(null);
@@ -364,8 +364,8 @@ const StaffDashboard = () => {
                           Created:{" "}
                           {complaint.createdAt
                             ? new Date(
-                                complaint.createdAt
-                              ).toLocaleDateString()
+                              complaint.createdAt
+                            ).toLocaleDateString()
                             : "N/A"}
                         </span>
 
@@ -386,56 +386,56 @@ const StaffDashboard = () => {
                         {/* ASSIGNED */}
                         {complaint.status?.toLowerCase() ===
                           "assigned" && (
-                          <button
-                            onClick={() =>
-                              handleStatusChange(
-                                complaint._id,
-                                "in-progress"
-                              )
-                            }
-                            disabled={
-                              updatingId === complaint._id
-                            }
-                            className="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
-                          >
-                            {updatingId === complaint._id
-                              ? "Starting..."
-                              : "Start Work"}
-                          </button>
-                        )}
+                            <button
+                              onClick={() =>
+                                handleStatusChange(
+                                  complaint._id,
+                                  "in-progress"
+                                )
+                              }
+                              disabled={
+                                updatingId === complaint._id
+                              }
+                              className="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+                            >
+                              {updatingId === complaint._id
+                                ? "Starting..."
+                                : "Start Work"}
+                            </button>
+                          )}
 
                         {/* IN PROGRESS */}
                         {complaint.status?.toLowerCase() ===
                           "in-progress" && (
-                          <button
-                            onClick={() =>
-                              handleStatusChange(
-                                complaint._id,
-                                "resolved"
-                              )
-                            }
-                            disabled={
-                              updatingId === complaint._id
-                            }
-                            className="rounded-lg bg-green-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-green-700 disabled:cursor-not-allowed disabled:opacity-50"
-                          >
-                            {updatingId === complaint._id
-                              ? "Resolving..."
-                              : "Mark as Resolved"}
-                          </button>
-                        )}
+                            <button
+                              onClick={() =>
+                                handleStatusChange(
+                                  complaint._id,
+                                  "resolved"
+                                )
+                              }
+                              disabled={
+                                updatingId === complaint._id
+                              }
+                              className="rounded-lg bg-green-600 px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-green-700 disabled:cursor-not-allowed disabled:opacity-50"
+                            >
+                              {updatingId === complaint._id
+                                ? "Resolving..."
+                                : "Mark as Resolved"}
+                            </button>
+                          )}
 
                         {/* RESOLVED */}
                         {complaint.status?.toLowerCase() ===
                           "resolved" && (
-                          <div className="flex items-center gap-2 rounded-lg bg-green-50 px-5 py-2.5 text-sm font-semibold text-green-700">
-                            <span className="text-lg">
-                              ✓
-                            </span>
+                            <div className="flex items-center gap-2 rounded-lg bg-green-50 px-5 py-2.5 text-sm font-semibold text-green-700">
+                              <span className="text-lg">
+                                ✓
+                              </span>
 
-                            Resolved
-                          </div>
-                        )}
+                              Resolved
+                            </div>
+                          )}
 
                       </div>
 

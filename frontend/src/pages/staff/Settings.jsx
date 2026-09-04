@@ -147,7 +147,7 @@ const StaffSettings = () => {
       // SUCCESS
       setPasswordMessage(
         response.data?.message ||
-          "Password changed successfully."
+        "Password changed successfully."
       );
 
       // Clear inputs
@@ -179,14 +179,14 @@ const StaffSettings = () => {
 
       setPasswordError(
         backendMessage ||
-          "Unable to change password. Please try again."
+        "Unable to change password. Please try again."
       );
     } finally {
       setPasswordLoading(false);
     }
   };
 
-  
+
 
 
   // LOAD APPEARANCE
@@ -497,11 +497,10 @@ const StaffSettings = () => {
                   onClick={() =>
                     handleAppearanceChange("light")
                   }
-                  className={`rounded-xl border p-4 text-left transition ${
-                    appearance === "light"
-                      ? "border-blue-500 bg-blue-50"
-                      : "border-slate-200 bg-white hover:bg-slate-50"
-                  }`}
+                  className={`rounded-xl border p-4 text-left transition ${appearance === "light"
+                    ? "border-blue-500 bg-blue-50"
+                    : "border-slate-200 bg-white hover:bg-slate-50"
+                    }`}
                 >
 
                   <div className="flex items-center gap-3">
@@ -532,11 +531,10 @@ const StaffSettings = () => {
                   onClick={() =>
                     handleAppearanceChange("dark")
                   }
-                  className={`rounded-xl border p-4 text-left transition ${
-                    appearance === "dark"
-                      ? "border-blue-500 bg-blue-50"
-                      : "border-slate-200 bg-white hover:bg-slate-50"
-                  }`}
+                  className={`rounded-xl border p-4 text-left transition ${appearance === "dark"
+                    ? "border-blue-500 bg-blue-50"
+                    : "border-slate-200 bg-white hover:bg-slate-50"
+                    }`}
                 >
 
                   <div className="flex items-center gap-3">

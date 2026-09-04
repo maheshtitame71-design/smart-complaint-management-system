@@ -21,7 +21,7 @@ const AssignedComplaints = () => {
 
       alert(
         error.response?.data?.message ||
-          "Failed to fetch assigned complaints"
+        "Failed to fetch assigned complaints"
       );
     } finally {
       setLoading(false);
@@ -49,10 +49,10 @@ const AssignedComplaints = () => {
         prevComplaints.map((complaint) =>
           complaint._id === complaintId
             ? {
-                ...complaint,
-                status: response.data.complaint.status,
-                updatedAt: response.data.complaint.updatedAt,
-              }
+              ...complaint,
+              status: response.data.complaint.status,
+              updatedAt: response.data.complaint.updatedAt,
+            }
             : complaint
         )
       );
@@ -61,7 +61,7 @@ const AssignedComplaints = () => {
 
       alert(
         error.response?.data?.message ||
-          "Failed to update complaint status"
+        "Failed to update complaint status"
       );
     } finally {
       setUpdatingId(null);
@@ -229,8 +229,8 @@ const AssignedComplaints = () => {
                         <p className="mt-1 text-sm font-medium text-slate-700">
                           {complaint.createdAt
                             ? new Date(
-                                complaint.createdAt
-                              ).toLocaleDateString()
+                              complaint.createdAt
+                            ).toLocaleDateString()
                             : "N/A"}
                         </p>
                       </div>
@@ -244,8 +244,8 @@ const AssignedComplaints = () => {
                         <p className="mt-1 text-sm font-medium text-slate-700">
                           {complaint.updatedAt
                             ? new Date(
-                                complaint.updatedAt
-                              ).toLocaleDateString()
+                              complaint.updatedAt
+                            ).toLocaleDateString()
                             : "N/A"}
                         </p>
                       </div>

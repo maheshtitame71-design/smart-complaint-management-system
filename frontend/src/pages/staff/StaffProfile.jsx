@@ -23,7 +23,7 @@ const StaffProfile = () => {
 
         setError(
           error.response?.data?.message ||
-            "Unable to load your profile."
+          "Unable to load your profile."
         );
       } finally {
         setLoading(false);
