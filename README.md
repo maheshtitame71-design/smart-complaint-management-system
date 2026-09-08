@@ -8,7 +8,7 @@ The system provides separate workflows for **Users, Staff, and Administrators**,
 
 ## 🚀 Live Demo
 
-[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://smart-complaint-management-system-hxnjdgkyu-mahesh-4dfa.vercel.app/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://smart-complaint-management-system-hxnjdgkyu-mahesh-4dfa.vercel.app/register)
 
 ## 📌 Features
 
